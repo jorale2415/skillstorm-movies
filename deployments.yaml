@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: movie-apps
+  name: movie-app
   labels:
     app: movies
 spec:
@@ -15,7 +15,7 @@ spec:
         app: movies
     spec:
       containers:
-      - name: movie-apps
+      - name: movie-app
         image: jalex88/movie_app
         ports:
         - containerPort: 3000
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: movie-apps
+  name: movie-app
 spec:
   selector:
     app: movies

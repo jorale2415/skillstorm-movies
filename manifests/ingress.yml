@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "jalexkubernetes-2c92"
+    labels:
+        app: "jalexkubernetes-2c92"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: default-jalexkubernetes-2c92.454e8c2910db40d79933.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "jalexkubernetes-2c92"
+                servicePort: 3000

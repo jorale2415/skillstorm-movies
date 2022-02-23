@@ -13,7 +13,7 @@ export const App = () => {
                     {/* Please change the header title or body text to whatever you wish */}
                     <Header>
                         <Title>SkillStorm Movies</Title>
-                        <Body>Jordan Alex</Body>
+                        <Body>Jordan Alex.</Body>
                     </Header>
                 </Grid>
             </Grid>

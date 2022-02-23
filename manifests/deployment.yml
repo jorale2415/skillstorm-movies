@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "jalexkubernetes-2c92"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "jalexkubernetes-2c92"
+  template:
+    metadata:
+      labels:
+        app: "jalexkubernetes-2c92"
+    spec:
+      containers:
+        - name: "jalexkubernetes-2c92"
+          image: "jalexacr.azurecr.io/jalexkubernetes"
+          ports:
+          - containerPort: 3000

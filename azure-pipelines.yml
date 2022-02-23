@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'b2814356-5f54-4677-be06-ee5f461243e7'
   imageRepository: 'joraleskillstormmovies'
   containerRegistry: 'jalexacr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '*/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'jalexacr18bc-auth'
 
